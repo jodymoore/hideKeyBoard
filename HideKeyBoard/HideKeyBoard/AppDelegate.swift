@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  HideKeyBoard
 //
-//  Created by cis290 on 9/24/18.
+//  Created by jody moore on 9/25/18.
 //  Copyright © 2018 Rock Valley College. All rights reserved.
 //
 

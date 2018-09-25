@@ -2,29 +2,25 @@
 //  ViewController.swift
 //  HideKeyBoard
 //
-//  Created by cis290 on 9/24/18.
+//  Created by jody moore on 9/25/18.
 //  Copyright © 2018 Rock Valley College. All rights reserved.
 //
 
-
-
 import UIKit
-//0 ) Modify class ViewController: UIViewController, UIScrollViewDelegate, UITextFieldDelegate
-class ViewController: UIViewController, UIScrollViewDelegate, UITextFieldDelegate {
-    
-    //Outlets
-    
-    @IBOutlet weak var btnBAck: UIButton!
-    
-    @IBOutlet weak var txtView: UITextView!
+
+class ViewController: UIViewController, UIScrollViewDelegate, UITextFieldDelegate{
+   // outlets
+    @IBOutlet weak var btnBack: UIButton!
     
     @IBOutlet weak var ScrollView: UIScrollView!
-    @IBOutlet weak var txtFirst: UITextField!
-    @IBOutlet weak var txtLast: UITextField!
-    @IBOutlet weak var txtEmail: UITextField!
-    //Actions
     
-
+    @IBOutlet weak var txtFirst: UITextField!
+    
+    @IBOutlet weak var txtLast: UITextField!
+    @IBOutlet weak var txtView: UITextView!
+    @IBOutlet weak var txtEmail: UITextField!
+    
+    // actions
     // 1) Modify btnBack function. Goes back to original ScrollView position
     @IBAction func btnBack(_ sender: UIButton) {
         //Add Below Code from "Code for Steps.txt". Fulfill Each Comment With Code
@@ -35,7 +31,6 @@ class ViewController: UIViewController, UIScrollViewDelegate, UITextFieldDelegat
         //set txtFirst as firstresponder
         txtFirst.becomeFirstResponder()
     }
-    
     
     //  2 Modify btnSave function. Validates UITextfields have content, formats text to place in UITextView txtView, Goes to location of btnBack button.
     @IBAction func btnSave(_ sender: UIButton) {
@@ -194,12 +189,12 @@ class ViewController: UIViewController, UIScrollViewDelegate, UITextFieldDelegat
         //Set focus on txtFirst
         txtFirst.becomeFirstResponder()
     }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    
-    
+
+
 }
+
